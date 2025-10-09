@@ -167,7 +167,8 @@
         android:text="Button"
         app:layout_constraintBottom_toBottomOf="@+id/button_assistir3"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
-        app:layout_constraintTop_toTopOf="@+id/button_assistir3" />
+        app:layout_constraintTop_toTopOf="@+id/button_assistir3"
+        android:backgroundTint="#00B61D1D"/>/>
 
     <Button
         android:id="@+id/button_assistir3"
@@ -178,6 +179,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/button_assistir"
         app:layout_constraintEnd_toStartOf="@+id/button_assistir2"
         app:layout_constraintStart_toEndOf="@+id/button_assistir"
-        app:layout_constraintTop_toTopOf="@+id/button_assistir" />
+        app:layout_constraintTop_toTopOf="@+id/button_assistir"
+        android:backgroundTint="#B61D1D"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
