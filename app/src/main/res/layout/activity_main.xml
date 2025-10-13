@@ -20,8 +20,8 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="72dp"
-        android:layout_height="76dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline5"
         app:layout_constraintEnd_toStartOf="@+id/textView"
         app:layout_constraintHorizontal_bias="0.5"
@@ -85,21 +85,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="93dp" />
+        app:layout_constraintGuide_percent="0.11" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="219dp" />
+        app:layout_constraintGuide_percent="0.2599179" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="336dp" />
+        app:layout_constraintGuide_percent="0.45" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -108,7 +108,7 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline6"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toTopOf="@+id/guideline5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/title" />
 
@@ -155,27 +155,30 @@
         android:backgroundTint="@color/invisivel"
         android:text="Minha Lista"
         android:textAlignment="center"
+        android:textColor="@color/white"
         android:textSize="11sp"
         app:icon="@drawable/baseline_add_24"
         app:iconGravity="textTop"
         app:iconSize="13sp"
+        app:iconTint="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/guideline7"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toTopOf="@+id/guideline6" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <Button
         android:id="@+id/button_assistir2"
         android:layout_width="107dp"
         android:layout_height="61dp"
-        android:textSize="11dp"
         android:backgroundTint="@color/invisivel"
         android:text="Detalhes"
+        android:textColor="@color/white"
+        android:textSize="11dp"
         app:icon="@drawable/outline_autorenew_24"
         app:iconGravity="textTop"
         app:iconSize="13sp"
+        app:iconTint="@color/white"
         app:layout_constraintBottom_toBottomOf="@+id/button_assistir3"
-        app:layout_constraintEnd_toStartOf="@+id/guideline4"
-        app:layout_constraintTop_toTopOf="@+id/button_assistir3" />
+        app:layout_constraintEnd_toStartOf="@+id/guideline4" />
 
 
     <Button
@@ -184,12 +187,14 @@
         android:layout_height="51dp"
         android:backgroundTint="@color/secundaria"
         android:text="Assitir"
+        android:textColor="@color/white"
         app:icon="@drawable/play"
         app:iconSize="27sp"
+        app:iconTint="@color/white"
         app:layout_constraintBottom_toBottomOf="@+id/button_assistir"
         app:layout_constraintEnd_toStartOf="@+id/button_assistir2"
-        app:layout_constraintStart_toEndOf="@+id/button_assistir"
-        app:layout_constraintTop_toTopOf="@+id/button_assistir" />
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toEndOf="@+id/button_assistir" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -228,13 +233,10 @@
         android:id="@+id/textView7"
         android:layout_width="89dp"
         android:layout_height="21dp"
+        android:layout_marginTop="39dp"
         android:text="Lançamentos"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guideline4"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toTopOf="@+id/guideline7"
-        app:layout_constraintVertical_bias="0.01999998" />
+        app:layout_constraintTop_toBottomOf="@+id/button_assistir3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
