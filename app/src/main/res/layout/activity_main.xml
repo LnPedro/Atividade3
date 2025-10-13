@@ -5,19 +5,17 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1F1F1F"
     tools:context=".MainActivity">
 
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="415dp"
+        android:layout_width="wrap_content"
         android:layout_height="338dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/guideline7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/dexter" />
 
     <ImageView
@@ -101,7 +99,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="340dp" />
+        app:layout_constraintGuide_begin="336dp" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -152,22 +150,29 @@
 
     <Button
         android:id="@+id/button_assistir"
-        android:layout_width="100dp"
-        android:layout_height="53dp"
+        android:layout_width="107dp"
+        android:layout_height="61dp"
         android:backgroundTint="@color/invisivel"
         android:text="Minha Lista"
-        app:icon="@drawable/outline_add_24"
+        android:textAlignment="center"
+        android:textSize="11sp"
+        app:icon="@drawable/baseline_add_24"
+        app:iconGravity="textTop"
+        app:iconSize="13sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline7"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
         app:layout_constraintTop_toTopOf="@+id/guideline6" />
 
     <Button
         android:id="@+id/button_assistir2"
-        android:layout_width="100dp"
-        android:layout_height="53dp"
+        android:layout_width="107dp"
+        android:layout_height="61dp"
+        android:textSize="11dp"
         android:backgroundTint="@color/invisivel"
         android:text="Detalhes"
         app:icon="@drawable/outline_autorenew_24"
+        app:iconGravity="textTop"
+        app:iconSize="13sp"
         app:layout_constraintBottom_toBottomOf="@+id/button_assistir3"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toTopOf="@+id/button_assistir3" />
@@ -179,7 +184,8 @@
         android:layout_height="51dp"
         android:backgroundTint="@color/secundaria"
         android:text="Assitir"
-        app:icon="@drawable/outline_playpapai"
+        app:icon="@drawable/play"
+        app:iconSize="27sp"
         app:layout_constraintBottom_toBottomOf="@+id/button_assistir"
         app:layout_constraintEnd_toStartOf="@+id/button_assistir2"
         app:layout_constraintStart_toEndOf="@+id/button_assistir"
@@ -220,8 +226,8 @@
 
     <TextView
         android:id="@+id/textView7"
-        android:layout_width="80dp"
-        android:layout_height="19dp"
+        android:layout_width="89dp"
+        android:layout_height="21dp"
         android:text="Lançamentos"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
