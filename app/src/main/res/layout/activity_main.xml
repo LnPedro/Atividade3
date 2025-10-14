@@ -245,6 +245,7 @@
         android:layout_height="wrap_content"
         android:text="Pedro Abraão Lino da Silva\n20232TIIMI0233"
         android:textAlignment="center"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
