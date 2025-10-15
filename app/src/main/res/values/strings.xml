@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">ConstrainLayout2</string>
+    <string name="series">Series</string>
+    <string name="filmes">Filmes</string>
+    <string name="minha_lista">Minha Lista</string>
+    <string name="drama">Drama</string>
+    <string name="suspense">Suspense</string>
+    <string name="a_o">Ação</string>
+    <string name="detalhes">Detalhes</string>
+    <string name="assitir">Assitir</string>
+    <string name="lan_amentos">Lançamentos</string>
+    <string name="minha_lista2">Minha Lista</string>
 </resources>
